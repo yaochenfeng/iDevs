@@ -7,12 +7,15 @@
 //
 
 #import "BeeAppDelegate.h"
-
+#import <ATSDK/ATManager.h>
+#import <FLEX/FLEX.h>
 @implementation BeeAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    [[ATManager shareInstance] show];
+    [[FLEXManager sharedManager] showExplorer];
     return YES;
 }
 

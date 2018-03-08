@@ -38,7 +38,7 @@
 
 /* Begin PBXFileReference section */
 		18F7A263FA1054A7EF0FAD18 /* Pods-iDevs_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iDevs_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iDevs_Example/Pods-iDevs_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		4E98ABA755F05D464560C0BB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		4E98ABA755F05D464560C0BB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* iDevs_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iDevs_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -59,12 +59,14 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		7E6CEE3BD664B6515A084A65 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		7E6CEE3BD664B6515A084A65 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8F2D5BFB2051081400678905 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		8F2D5BFD2051095800678905 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		A25FBBB9022757AE0C9ED7B2 /* Pods-iDevs_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iDevs_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-iDevs_Example/Pods-iDevs_Example.release.xcconfig"; sourceTree = "<group>"; };
 		B4813E05C1430F62992A5FF6 /* Pods-iDevs_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iDevs_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iDevs_Tests/Pods-iDevs_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		D281294B0AE2C5072D9AD88F /* Pods_iDevs_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iDevs_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DEC118700626D95895F9E9E4 /* iDevs.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = iDevs.podspec; path = ../iDevs.podspec; sourceTree = "<group>"; };
+		DEC118700626D95895F9E9E4 /* iDevs.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = iDevs.podspec; path = ../iDevs.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		E9E7B7268E773F7450D28501 /* Pods-iDevs_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iDevs_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iDevs_Tests/Pods-iDevs_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		FBC0440D9631FE3B248ACD0F /* Pods_iDevs_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iDevs_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -119,6 +121,8 @@
 		6003F58C195388D20070C39A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8F2D5BFD2051095800678905 /* AudioToolbox.framework */,
+				8F2D5BFB2051081400678905 /* libsqlite3.tbd */,
 				6003F58D195388D20070C39A /* Foundation.framework */,
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
@@ -304,11 +308,11 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-iDevs_Example/Pods-iDevs_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/iDevs/iDevs.framework",
+				"${BUILT_PRODUCTS_DIR}/FLEX/FLEX.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/iDevs.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FLEX.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -321,9 +325,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-iDevs_Example/Pods-iDevs_Example-resources.sh",
+				"${PODS_ROOT}/../../iDevs/Frameworks/ATSDK.framework/Versions/A/Resources/ATSDK.bundle",
+				"${PODS_ROOT}/../../iDevs/Frameworks/ATSDK.framework/Versions/A/Resources/en.lproj",
+				"${PODS_ROOT}/../../iDevs/Frameworks/ATSDK.framework/Versions/A/Resources/zh-Hans.lproj",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ATSDK.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/en.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/zh-Hans.lproj",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

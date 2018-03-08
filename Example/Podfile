@@ -2,7 +2,7 @@ use_frameworks!
 
 target 'iDevs_Example' do
   pod 'iDevs', :path => '../'
-
+  pod 'FLEX'
   target 'iDevs_Tests' do
     inherit! :search_paths
 
